@@ -2,6 +2,7 @@ package main
 
 import "encoding/xml"
 
+// XML schema of the TRX file
 type TestRun struct {
 	XMLName xml.Name `xml:"TestRun"`
 	Text    string   `xml:",chardata"`

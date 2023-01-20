@@ -13,5 +13,9 @@
     "jsxImportSource": "solid-js",
     "noEmit": true,
     "isolatedModules": true
-  }
+  },
+  "includes": [
+    "src/*.tsx",
+    "src/*.ts"
+  ]
 }
