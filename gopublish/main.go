@@ -69,5 +69,5 @@ func main() {
 	xml2json("../results/public/TestResults/nightly.trx",
 		"../results/public/trx.json")
 	// provide a directory of the files to the renderer. should be SSR
-	TestResults("../results/public/TestResults", "../results/public/files.json")
+	TestResults("../results/public/TestResults", "../results/public/")
 }

@@ -1,3 +1,13 @@
+Trx is not able to capture fully qualified names
+https://github.com/microsoft/vstest/issues/2845
+
+So custom logger it is.
+
+The custom logger will reference the fully qualified domain name, but this still doesn't get us a link to the gherkin. The AOT compiler can create a map though to the gherkin, maybe the original path.
+
+Note that in the api documentation, it won't naturally have a file mapping either: file tree <> namespace in dotnet.
+
+
 
 
 assumes that asipublish and asi1 are in the same directory

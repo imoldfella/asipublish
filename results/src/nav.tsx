@@ -2,6 +2,7 @@ import './index.css'
 import { Component, For, JSXElement, Switch, Match } from 'solid-js'
 import { chevronLeft } from "solid-heroicons/solid";
 import { Icon } from 'solid-heroicons';
+import { A } from '@solidjs/router';
 
 interface Tab {
   name: string,
@@ -10,7 +11,7 @@ interface Tab {
 export const Tab: Component<{ tab: Tab, selected: boolean }> = (props) => {
   return <Switch>
     <Match when={props.selected}> <a class="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900">{props.tab.name}</a></Match>
-    <Match when={!props.selected}> <a href={props.tab.route} class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">{props.tab.name}</a></Match>
+    <Match when={!props.selected}> <A href={props.tab.route} class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">{props.tab.name}</A></Match>
   </Switch >
 }
 
